@@ -4,7 +4,7 @@
 </script>
 
 <h2>
-    name: {name}
+    name: {name}<br />
     age: {age}
 </h2>
 
