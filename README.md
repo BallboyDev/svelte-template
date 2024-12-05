@@ -1,38 +1,21 @@
-# create-svelte
+# svelte
+## create project
+- `npx sv create`
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+## svelte4 vs svelte5
 
-## Creating a project
+## svelte vs react
 
-If you're seeing this, you've probably already done this step. Congrats!
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## svelte 특징
+- 상태 관리를 특별한 기법이나 함수를 사용하지 않고도 가능하다.
+    - svelte5에서 일부 변경
+- 스벨트는 런타임 없이 빌드 타입에서 실행 하능한 형태로 변환되어 로딩 된다.
+    - 스벨트는 컴파일러
+- 가상 DOM의 미사용
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## vite를 사용한 svelte 환경 설정
+- `npm create vite@latest my-project -- --template [svelte | svelte-ts]`
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## 기초 문법
+### component
