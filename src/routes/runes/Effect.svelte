@@ -38,21 +38,46 @@
 <p>{state.value} doubled is {derived.value}</p> -->
 
 <script>
-    let state = $state(0);
+    let count = $state(0);
+    let temp = $state(0);
+
+    console.log("in component setup : ", $effect.tracking());
 
     $effect(() => {
-        state;
+        count;
         console.log("effect");
     });
 
     $effect.pre(() => {
-        state;
+        count;
         console.log("effect.pre");
+    });
+
+    $effect(() => {
+        console.log("in effect : ", $effect.tracking());
+    });
+
+    const cleanup = $effect.root(() => {
+        $effect(() => {
+            console.log(count);
+        });
+
+        return () => {
+            console.log("effect root cleanup");
+        };
     });
 </script>
 
 <button
     onclick={() => {
-        state++;
-    }}>{state}</button
+        count++;
+        console.log("in onclick : ", $effect.tracking());
+    }}>{count}</button
 >
+<button
+    onclick={() => {
+        temp++;
+    }}>TEMP</button
+>
+
+<p>in template : {$effect.tracking()}</p>
