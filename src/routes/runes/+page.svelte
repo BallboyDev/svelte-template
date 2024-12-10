@@ -5,6 +5,7 @@
     import Props from "./Props.svelte";
     import Bindable from "./Bindable.svelte";
     import Inspect from "./Inspect.svelte";
+    import Host from "./Host.svelte";
 
     let items = $state([
         "state",
@@ -13,8 +14,11 @@
         "props",
         "bindable",
         "inspect",
+        "host",
     ]);
-    let runes = $state("inspect");
+    let runes = $state("host");
+
+    let count = $state(0);
 </script>
 
 <h3>{runes}</h3>
@@ -43,4 +47,11 @@
     <p>{runes}</p>
 {:else if runes === "inspect"}
     <Inspect />
+{:else if runes === "host"}
+    <!-- <Host /> -->
+    <my-stepper
+        ondecrement={() => (count -= 1)}
+        onincrement={() => (count += 1)}
+    ></my-stepper>
+    <p>count: {count}</p>
 {/if}
