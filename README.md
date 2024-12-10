@@ -18,8 +18,18 @@
 - `npm create vite@latest my-project -- --template [svelte | svelte-ts]`
 
 # Index
-### [1. svelte basic](./src/routes/basic/index.md)
-### [2. attribute](./src/routes/attribute/index.md)
-### [3. slot](./src/routes/slot/index.md)
-### [4. event](./src/routes/event/index.md)
-### [5. life cycle](./src/routes/lifeCycle/index.md)
+### [1. Svelte Basic](./src/routes/basic/index.md)
+
+### [2. Attribute](./src/routes/attribute/index.md)
+
+### [3. Slot](./src/routes/slot/index.md)
+
+### [4. Event](./src/routes/event/index.md)
+
+### [5. Life cycle](./src/routes/lifeCycle/index.md)
+
+### [6. Runes](./src/routes/runes/index.md)
+
+### [7. Template Syntax](./src/routes/templateSyntax/index.md)
+
+### [8. Directive](./src/routes/directive/index.md)

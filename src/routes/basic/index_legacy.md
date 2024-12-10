@@ -1,4 +1,4 @@
-## Basic
+## svelte component
 
 ### .svelte 파일 구조
 - 스벨트 컴포넌트는 .svelte 확장자를 사용한다.
@@ -75,3 +75,65 @@ template code
     <div style:color={color}>{color}</div>
     <div style:color>{color}</div>
     ```
+
+### block
+- 스벨트의 템플릿에서는 조건 분기나 반복문과 같은 문법을 제공한다.
+- 블록 문법은 모두 `{#xxx...}`에서 시작해 `{/xxx}`로 끝나는 구조를 가진다.
+    1. `{#if}` 블록 - 조건에 따라 표시하는 부분을 변경할 수 있다
+        ```html
+        {#if 조건문1}
+            <!-- HTML 코드1 -->
+        {:else if 조건문2}
+            <!-- HTML 코드2 -->
+        {:else}
+            <!-- HTML 코드3 -->
+        {/if}
+        ```
+
+    2. `{#each}` 블록 - 배열 요소를 반복문으로 표현할 수 있다
+        ```html
+        {#each item as items, index}
+            <!-- HTML 코드 -->
+        {/each}
+        ```
+
+    3. `{#await}` 블록 - Promise를 사용할 수 있는 블록
+        ```html
+        {#await promise}
+            <!-- HTML 코드 - waiting code -->
+        {:then res}
+            <!-- HTML 코드 - resolve data -->
+        {:catch error}
+            <!-- HTML 코드 - reject data -->
+        {/await}
+        ```
+        ```html
+        <!-- then 블록만 사용 -->
+        {#await promise then res}
+            <!-- HTML 코드 - resolve data -->
+        {/await}
+
+        <!-- catch 블록만 사용 -->
+        {#await promise catch error}
+            <!-- HTML 코드 - reject data -->
+        {/await}
+        ```
+
+    4. `{#key}` 블록
+
+### component 사용
+```html
+<!-- SvelteLogo.svelte -->
+<img
+    src="https://cdn.jsdelivr.net/gh/sveltejs/branding/svelte-logo.png"
+    alt="Svelte Logo"
+/>
+
+<!-- App.svelte -->
+<script>
+    import SvelteLogo from "./component/SvelteLogo.svelte";
+</script>
+
+<div>Svelte Logo 이미지 삽입</div>
+<SvelteLogo />
+```
