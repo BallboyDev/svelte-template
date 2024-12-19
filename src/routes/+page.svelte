@@ -1,7 +1,8 @@
-<a href="/attribute">attribute</a>
-<a href="/slot">slot</a>
-<a href="/event">event</a>
-<a href="/lifeCycle">lifeCycle</a>
-<a href="/runes">runes</a>
-<a href="/templateSyntax">templateSyntax</a>
-<a href="/directive">directive</a>
+<a href="/attribute">attribute</a><br />
+<a href="/slot">slot</a><br />
+<a href="/event">event</a><br />
+<a href="/lifeCycle">lifeCycle</a><br />
+<a href="/runes">runes</a><br />
+<a href="/templateSyntax">templateSyntax</a><br />
+<a href="/directive">directive</a><br />
+<a href="/runtime">runtime</a><br />

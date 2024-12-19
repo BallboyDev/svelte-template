@@ -33,3 +33,5 @@
 ### [7. Template Syntax](./src/routes/templateSyntax/index.md)
 
 ### [8. Directive](./src/routes/directive/index.md)
+
+### [9. Runtime](./src/routes/runtime/index.md)
