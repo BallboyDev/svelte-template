@@ -1,7 +1,8 @@
 <script>
+    import Context from "./Context.svelte";
     import Store from "./Store.svelte";
 
-    let items = $state(["store"]);
+    let items = $state(["store", "context"]);
     let runtime = $state("store");
 </script>
 
@@ -19,4 +20,6 @@
 
 {#if runtime === "store"}
     <Store />
+{:else if runtime === "context"}
+    <Context />
 {/if}
