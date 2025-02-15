@@ -35,3 +35,5 @@
 ### [8. Directive](./src/routes/directive/index.md)
 
 ### [9. Runtime](./src/routes/runtime/index.md)
+
+### [10. svelte.config.js](./svelte.config.md)
