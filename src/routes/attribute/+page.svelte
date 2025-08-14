@@ -6,7 +6,7 @@
     import Button from "./Button.svelte";
     // let buttonLabel = "전송";
 
-    // 문자열 이회의 속성
+    // 문자열 이외의 속성
     import UserProfile from "./UserProfile.svelte";
     let ballboy = { name: "yang", id: "ballboy", bio: "franciscus" };
 </script>

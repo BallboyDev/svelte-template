@@ -1,6 +1,9 @@
 # svelte
 ## create project
-- `npx sv create`
+- sveltekit
+    - `npx sv create`
+- svelte + vite
+    - `npm create vite@latest`
 
 ## svelte4 vs svelte5
 
