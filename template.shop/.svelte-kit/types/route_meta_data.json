@@ -1,0 +1,20 @@
+{
+	"/(protected)": [
+		"src/routes/(protected)/+layout.server.ts"
+	],
+	"/": [],
+	"/(protected)/addItem": [
+		"src/routes/(protected)/+layout.server.ts"
+	],
+	"/(protected)/detail": [
+		"src/routes/(protected)/+layout.server.ts"
+	],
+	"/(auth)/join": [],
+	"/(protected)/list": [
+		"src/routes/(protected)/+layout.server.ts"
+	],
+	"/(auth)/login": [],
+	"/(protected)/modifyItem": [
+		"src/routes/(protected)/+layout.server.ts"
+	]
+}
