@@ -9,11 +9,11 @@ npm run dev
 ### [sveltekit 정리](https://ballboydev.github.io/post/117)
 
 ## Practices
-### [데이터 흐름과 페이지 구성](/src/routes/render/데이터%20흐름과%20페이지의%20구성.md)
+### [데이터 흐름과 페이지의 구성](<src/routes/render/데이터 흐름과 페이지의 구성.md>)
 
-### [Error Page](/src/routes/error/Error%20page.md)
+### [Error page](<src/routes/error/Error page.md>)
 
-### [+server.ts](/src/routes/server/서버%20핸들러.md)
+### [+server.ts](<src/routes/server/서버 핸들러.md>)
 
 ### [라우트 그룹](<src/routes/route_group/라우트 그룹.md>)
 
